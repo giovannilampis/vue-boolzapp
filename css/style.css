@@ -144,7 +144,7 @@ img {
 }
 
 #main-chat {
-    background-image: url(../images/mine.jpg);
+    background-image: url(../img/mine.jpg);
     width: 100%;
     height: calc(100% - 8rem);
 }

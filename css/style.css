@@ -22,3 +22,8 @@
 img {
     width: 100%;
 }
+
+#app {
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--green-bg) 15%, var(--lightgrey-bg) 15%);
+}

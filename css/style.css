@@ -3,7 +3,13 @@
 :root {
     --green-bg: #00a884;
     --lightgrey-bg: #d2d9d7;
-    --container-grey: #202c33;
+    --mid-gray: #202c33;
+    --dark-gray: #111b21;
+    --light-gray: #2a3942;
+    --icon-gray: #8696a0;
+    --chat-green: #005c4b;
+    --blue: #53bdeb;
+    --white: #ffffff;
 
 }
 
@@ -33,7 +39,7 @@ img {
 #app-container {
     width: 80%;
     height: 90%;
-    background-color: var(--container-grey);
+    background-color: var(--container-app);
 }
 
 #side-contacts {

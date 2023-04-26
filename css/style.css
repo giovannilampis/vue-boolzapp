@@ -2,7 +2,9 @@
 
 :root {
     --green-bg: #00a884;
-    --lightgrey-bg: #d2d9d7
+    --lightgrey-bg: #d2d9d7;
+    --container-grey: #202c33;
+
 }
 
 /* GENERAL*/
@@ -26,4 +28,20 @@ img {
 #app {
     width: 100%;
     background-image: linear-gradient(180deg, var(--green-bg) 15%, var(--lightgrey-bg) 15%);
+}
+
+#app-container {
+    width: 80%;
+    height: 90%;
+    background-color: var(--container-grey);
+}
+
+#side-contacts {
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+#main-chat-space {
+    height: 100%;
+    width: calc(100% / 3 * 2);
 }

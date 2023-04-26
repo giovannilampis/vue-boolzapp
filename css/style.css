@@ -8,7 +8,7 @@
     --light-gray: #2a3942;
     --icon-gray: rgba(177, 177, 177, 1);
     --chat-green: #005c4b;
-    --blue: #53bdeb;
+    --blue: rgba(142, 218, 252, 1);
     --white: #ffffff;
 
 }
@@ -68,6 +68,12 @@ img {
 .avatar img {
     border-radius: 50%;
     cursor: pointer;
+}
+
+#turn-notifications-on {
+    background-color: var(--blue);
+    width: 100%;
+    height: 5.5rem;
 }
 
 #main-chat-space {

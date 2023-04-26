@@ -51,7 +51,7 @@ img {
 #co-user-account {
     width: 100%;
     height: 4rem;
-    background-color: var();
+    background-color: var(--mid-gray);
 }
 
 #user-account i,
@@ -94,4 +94,32 @@ img {
     padding: 0.8rem 0.7rem;
     border-radius: 50%;
     margin: 0 0.5rem 0 1rem;
+}
+
+#search-chat {
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--mid-gray);
+}
+
+.search-chat-container {
+    width: 97%;
+    height: 80%;
+    background-color: var(--white);
+    border-radius: 0.7rem;
+}
+
+#search-chat button {
+    background: transparent;
+    border: none;
+    margin-left: 1rem;
+    color: var(--icon-gray);
+}
+
+#search-chat input {
+    width: 80%;
+    border: none;
+    margin-left: 1.2rem;
+    background: transparent;
+    color: var(--icon-gray);
 }

@@ -68,7 +68,7 @@
                         <div id="friend" v-for="(contact, index) in contacts" :key="index">
 
                             <div class="avatar">
-                                <img src="{{contact.avatar}}" alt="{{contact.name}}">
+                                <img :src="contact.avatar" :alt="contact.name">
                             </div>
 
                         </div>

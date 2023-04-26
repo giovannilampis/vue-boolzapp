@@ -143,6 +143,10 @@ img {
     border-bottom: 1px solid var(--mid-gray);
 }
 
+#friend .avatar {
+    margin-right: 1rem;
+}
+
 #main-chat {
     background-image: url(../img/mine.jpg);
     width: 100%;

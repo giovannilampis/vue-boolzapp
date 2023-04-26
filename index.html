@@ -65,11 +65,31 @@
 
                     <section id="friends-chats" class="debug2">
 
-                        <div id="friend" v-for="(contact, index) in contacts" :key="index">
+                        <div id="friend" v-for="(contact, index) in contacts" :key="index" class="d-flex justify-content-between">
 
-                            <div class="avatar">
-                                <img :src="contact.avatar" :alt="contact.name">
+                            <div class="d-flex">
+
+                                <div class="avatar">
+                                    <img :src="contact.avatar" :alt="contact.name">
+                                </div>
+    
+                                <div class="friend-details">
+                                    <div>
+                                        {{contact.name}}
+                                    </div>
+                                        
+                                    <span>
+                                        Ultimo messaggio inviato
+                                    </span>
+                                </div>
+
                             </div>
+
+                            <span class="mt-1 mx-2">
+                                12:00
+                            </span>
+
+             
 
                         </div>
 

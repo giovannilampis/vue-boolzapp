@@ -3,10 +3,10 @@
 :root {
     --green-bg: #00a884;
     --lightgrey-bg: #d2d9d7;
-    --mid-gray: #202c33;
+    --mid-gray: rgba(234, 234, 234, 1);
     --dark-gray: #111b21;
     --light-gray: #2a3942;
-    --icon-gray: #8696a0;
+    --icon-gray: rgba(177, 177, 177, 1);
     --chat-green: #005c4b;
     --blue: #53bdeb;
     --white: #ffffff;
@@ -39,15 +39,36 @@ img {
 #app-container {
     width: 80%;
     height: 90%;
-    background-color: var(--container-app);
+    background-color: var(--mid-gray);
 }
 
 #side-contacts {
     height: 100%;
-    width: calc(100% / 3);
+    width: 35%;
+}
+
+#user-account {
+    width: 100%;
+    height: 5rem;
+    background-color: var();
+}
+
+#user-account i {
+    color: var(--icon-gray);
+    margin-right: 1rem;
+}
+
+.avatar {
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+}
+
+.avatar img {
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #main-chat-space {
     height: 100%;
-    width: calc(100% / 3 * 2);
+    width: 65%
 }

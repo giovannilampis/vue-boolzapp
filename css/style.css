@@ -45,6 +45,7 @@ img {
     width: 80%;
     height: 90%;
     background-color: var(--mid-gray);
+    border-radius: 0.2rem;
 }
 
 #side-contacts {
@@ -57,6 +58,10 @@ img {
     width: 100%;
     height: 4rem;
     background-color: var(--mid-gray);
+}
+
+#user-account {
+    border-radius: 0.2rem 0 0 0;
 }
 
 #user-account i,
@@ -73,7 +78,7 @@ img {
 .avatar img {
     border-radius: 50%;
     cursor: pointer;
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
 }
 
 #turn-notifications-on {
@@ -98,7 +103,7 @@ img {
     color: var(--blue);
     padding: 0.8rem 0.7rem;
     border-radius: 50%;
-    margin: 0 0.5rem 0 1rem;
+    margin: 0 0.3rem 0 1rem;
 }
 
 #search-chat {
@@ -135,8 +140,9 @@ img {
     height: calc(100% - 12.5rem);
     background-color: var(--white);
     color: var(--mid-gray);
+    border-radius: 0 0 0 0.2rem;
 }
-
+m
 #friend {
     width: 100%;
     height: 4rem;
@@ -159,9 +165,9 @@ img {
     height: 4rem;
 }
 
-/* #input-text-container {
-    background-color: var(--white);
-} */
+#co-user-account {
+    border-radius: 0 0.2rem 0 0;
+}
 
 #main-input i {
     color: var(--dark-gray);

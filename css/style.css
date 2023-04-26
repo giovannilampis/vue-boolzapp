@@ -68,6 +68,7 @@ img {
 .avatar img {
     border-radius: 50%;
     cursor: pointer;
+    margin-left: 0.5rem;
 }
 
 #turn-notifications-on {
@@ -76,7 +77,21 @@ img {
     height: 5.5rem;
 }
 
+#turn-notifications-on span:last-child {
+    color: var(--icon-gray);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #main-chat-space {
     height: 100%;
     width: 65%
+}
+
+.fa-bell-slash {
+    background: var(--white);
+    color: var(--blue);
+    padding: 0.8rem 0.7rem;
+    border-radius: 50%;
+    margin: 0 0.5rem 0 1rem;
 }

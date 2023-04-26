@@ -47,13 +47,15 @@ img {
     width: 35%;
 }
 
-#user-account {
+#user-account,
+#co-user-account {
     width: 100%;
     height: 5rem;
     background-color: var();
 }
 
-#user-account i {
+#user-account i,
+#co-user-account i {
     color: var(--icon-gray);
     margin-right: 1rem;
 }

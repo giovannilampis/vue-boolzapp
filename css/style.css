@@ -28,6 +28,10 @@
     border: 2px dashed turquoise;
 }
 
+.debug2 {
+    border: 0.5px solid red;
+}
+
 img {
     width: 100%;
 }
@@ -123,6 +127,11 @@ img {
     margin-left: 1.2rem;
     background: transparent;
     color: var(--icon-gray);
+}
+
+#friends-chats {
+    width: 100%;
+    height: calc(100% - 12.5rem);
 }
 
 #main-chat {

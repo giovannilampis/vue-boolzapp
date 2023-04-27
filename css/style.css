@@ -171,6 +171,14 @@ img {
     height: calc(100% - 8rem);
 }
 
+.sent {
+    background-color: var(--chat-green);
+}
+
+.received {
+    background-color: var(--white);
+}
+
 #main-input {
     width: 100%;
     height: 4rem;

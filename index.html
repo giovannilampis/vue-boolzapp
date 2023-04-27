@@ -71,6 +71,7 @@
 
                     <section id="friends-chats">
 
+                        <!-- V-FOR CYCLE to create contacts' chats -->
                         <div v-for="(contact, index) in contacts" :key="index" class="friend d-flex justify-content-between">
 
                             <div class="d-flex">
@@ -80,13 +81,11 @@
                                 </div>
     
                                 <div class="friend-details mt-1">
-                                    <div class="name-color">
-                                        {{contact.name}}
-                                    </div>
+
+                                    <div class="name-color">{{contact.name}}</div>
                                         
-                                    <span class="last-message-color">
-                                        Ultimo messaggio inviato
-                                    </span>
+                                    <span class="last-message-color">Ultimo messaggio inviato</span>
+
                                 </div>
 
                             </div>
@@ -99,8 +98,6 @@
 
                     </section>
 
-
-    
                 </div>
     
                 <div id="main-chat-space">
@@ -136,7 +133,17 @@
 
                     <div id="main-chat">
 
+                        <div class="sent">
+                            <p>Hai portato a spasso il cane?</p>
+                        </div>
 
+                        <div class="sent">
+                            <p>Ricordati di stendere i panni</p>
+                        </div>
+
+                        <div class="received">
+                            <p>Tutto fatto!</p>
+                        </div>
 
                     </div>
                     

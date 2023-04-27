@@ -136,16 +136,8 @@
 
                     <div id="main-chat" class="d-flex flex-column">
 
-                        <div class="sent">
-                            <p>Hai portato a spasso il cane?</p>
-                        </div>
-
-                        <div class="sent">
-                            <p>Ricordati di stendere i panni</p>
-                        </div>
-
-                        <div class="received">
-                            <p>Tutto fatto!</p>
+                        <div v-for="(element, index) in contacts[activeContact].messages" v-bind:class="(element.status === 'sent')?'sent':'received'">
+                            <p>{{element.message}}</p>
                         </div>
 
                     </div>

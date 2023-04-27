@@ -46,6 +46,11 @@ img {
     height: 90%;
     background-color: var(--mid-gray);
     border-radius: 0.2rem;
+    font-size: 0.75rem;
+}
+
+#app-container i {
+    font-size: 1.2rem;
 }
 
 #side-contacts {

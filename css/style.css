@@ -142,14 +142,14 @@ img {
     color: var(--mid-gray);
     border-radius: 0 0 0 0.2rem;
 }
-m
-#friend {
+
+.friend {
     width: 100%;
     height: 4rem;
     border-bottom: 1px solid var(--mid-gray);
 }
 
-#friend .avatar {
+.friend .avatar {
     margin-right: 1rem;
 }
 

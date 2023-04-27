@@ -151,6 +151,10 @@ img {
     border-radius: 0 0 0 0.2rem;
 }
 
+#friends-chats > div:hover {
+    background-color: var(--icon-gray);
+}
+
 .last-message-color {
     color: var(--lightgrey-bg);
 }

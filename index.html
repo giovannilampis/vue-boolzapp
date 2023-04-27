@@ -110,7 +110,7 @@
                         <div class="d-flex">
 
                             <div class="avatar">
-                                <img src="./img/avatar_io.jpg" alt="user avatar">
+                                <img src="contacts[activeContact].avatar" alt="user avatar">
                             </div>
     
                             <div class="friend-details mx-3 mt-1">
@@ -120,7 +120,7 @@
                                 </div>
                                     
                                 <span class="last-message-color">
-                                    Ultimo messaggio oggi alle ore 12:00
+                                    {{ contacts[activeContact].messages[0].date }}
                                 </span>
                             </div>
 

@@ -191,6 +191,12 @@ createApp ({
 
         responseMessage(index) {
             this.contacts[index].messages.push( { message: 'OK 🤩', status: 'received' } )
+        },
+
+        extractTime(dateAndTime) {
+
+            const time = dateAndTime.split(' ')[1];
+
         }
 
     }

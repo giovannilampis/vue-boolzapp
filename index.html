@@ -126,19 +126,23 @@
 
                         </div>
 
-                        <div-user-functions>
+                        <div>
                             <i class="fa-solid fa-search"></i>
                             <i class="fa-solid fa-paperclip"></i>
                             <i class="fa-solid fa-ellipsis-v"></i>
-                        </div-user-functions>
+                        </div>
 
                     </div>
 
                     <div id="main-chat" class="d-flex flex-column">
 
-                        <div v-for="(element, index) in contacts[activeContact].messages" class="d-flex flex-column" v-bind:class="(element.status === 'sent')?'sent':'received'">
-                            <p class="align-self-start mx-3">{{element.message}}</p>
-                            <p class="align-self-end mx-3">{{element.date}}</p>
+                        <div v-for="(element, index) in contacts[activeContact].messages" 
+                             v-bind:class="(element.status === 'sent')?'sent':'received'"
+                             class="position-relative">
+
+                                <p>{{element.message}}</p>
+                                <p class="position-absolute">{{element.date}}</p>
+
                         </div>
 
                     </div>

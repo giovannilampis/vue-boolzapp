@@ -36,6 +36,10 @@ img {
     width: 100%;
 }
 
+p {
+    margin: 0;
+}
+
 #app {
     width: 100%;
     background-image: linear-gradient(180deg, var(--green-bg) 15%, var(--lightgrey-bg) 15%);
@@ -178,6 +182,16 @@ img {
 
 #co-user-account {
     border-radius: 0 0.2rem 0 0;
+}
+
+#main-chat > div:first-child{
+    margin-top: 1rem;
+}
+
+#main-chat .position-absolute {
+    bottom: 0.15rem;
+    right: 0.15rem;
+    font-size: 0.6rem;
 }
 
 .sent {

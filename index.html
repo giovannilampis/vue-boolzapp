@@ -72,7 +72,10 @@
                     <section id="friends-chats">
 
                         <!-- V-FOR CYCLE to create contacts' chats -->
-                        <div v-for="(contact, index) in contacts" :key="index" class="friend d-flex justify-content-between">
+                        <div v-for="(contact, index) in contacts" 
+                            :key="index" 
+                            class="friend d-flex justify-content-between"
+                            @click="changeActiveContact(index)">
 
                             <div class="d-flex">
 

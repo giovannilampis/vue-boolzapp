@@ -176,5 +176,9 @@ createApp ({
     },
     methods: {
 
+        changeActiveContact(i) {
+            this.activeContact = i
+        }
+
     }
 }).mount("#app")

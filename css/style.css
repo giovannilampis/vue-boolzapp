@@ -167,16 +167,19 @@ img {
 
 #main-chat {
     background-image: url(../img/mine.jpg);
+    background-size: 50%;
     width: 100%;
     height: calc(100% - 8rem);
 }
 
 .sent {
     background-color: var(--chat-green);
+    align-self: flex-end;
 }
 
 .received {
     background-color: var(--white);
+    align-self: flex-start;
 }
 
 #main-input {

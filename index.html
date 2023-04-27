@@ -148,7 +148,7 @@
                             <a href="#" class="mx-4"><i class="fa-regular fa-face-smile"></i></a>
 
                             <div id="input-text-container" class="last-message-color d-flex justify-content-center align-items-center">
-                                <input type="text" id="chat-text" placeholder="Scrivi messaggio" name="chat-text">
+                                <input v-model="inputMessageContent" @keydown.enter="enterMessage(activeContact)" type="text" id="chat-text" placeholder="Scrivi messaggio" name="chat-text">
                             </div>
 
                             <a href="#" class="mx-4"><i class="fa fa-microphone"></i></a>

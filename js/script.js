@@ -178,6 +178,10 @@ createApp ({
 
         changeActiveContact(i) {
             this.activeContact = i
+        },
+
+        enterMessage(index) {
+            this.contacts[index].messages.push( { message: this.inputMessageContent, status: 'sent' } )
         }
 
     }

@@ -136,8 +136,9 @@
 
                     <div id="main-chat" class="d-flex flex-column">
 
-                        <div v-for="(element, index) in contacts[activeContact].messages" v-bind:class="(element.status === 'sent')?'sent':'received'">
-                            <p>{{element.message}}</p>
+                        <div v-for="(element, index) in contacts[activeContact].messages" class="d-flex flex-column" v-bind:class="(element.status === 'sent')?'sent':'received'">
+                            <p class="align-self-start mx-3">{{element.message}}</p>
+                            <p class="align-self-end mx-3">{{element.date}}</p>
                         </div>
 
                     </div>

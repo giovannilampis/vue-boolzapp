@@ -174,6 +174,7 @@ createApp ({
 
         }
     },
+
     methods: {
 
         changeActiveContact(i) {
@@ -182,6 +183,14 @@ createApp ({
 
         enterMessage(index) {
             this.contacts[index].messages.push( { message: this.inputMessageContent, status: 'sent' } )
+
+            setTimeout(() => {
+                this.responseMessage(index);
+            }, 5000);
+        },
+
+        responseMessage(index) {
+            this.contacts[index].messages.push( { message: 'OK 🤩', status: 'received' } )
         }
 
     }

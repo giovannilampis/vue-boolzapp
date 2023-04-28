@@ -120,7 +120,8 @@
                                 </div>
                                     
                                 <span class="last-message-color">
-                                    {{ contacts[activeContact].messages[contacts[activeContact].messages.length - 1].date }}
+                                    <!-- {{ contacts[activeContact].messages[contacts[activeContact].messages.length - 1].date }} -->
+                                    {{getLastReceivedMessage(contacts[activeContact]).date}}
                                 </span>
                             </div>
 

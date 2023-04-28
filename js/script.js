@@ -233,11 +233,9 @@ createApp ({
             const msg = item.messages.filter((message)=>{
 
                 return message.status === 'received';
-
-                return msg;
             })
 
+            return msg[msg.length - 1];
         }
-
     }
 }).mount("#app")

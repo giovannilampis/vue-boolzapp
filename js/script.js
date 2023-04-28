@@ -228,14 +228,16 @@ createApp ({
 
         },
 
-        searchContactFunc() {
+        getLastReceivedMessage(item) {
 
-            // this.contacts = this.contacts.filter((item)=>{
+            const msg = item.messages.filter((message)=>{
 
-            //     const name = item.name.toLowerCase();
+                return message.status === 'received';
 
-            //     return name.includes(this.searchName.toLowerCase());
-            // })
+                return msg;
+            })
+
         }
+
     }
 }).mount("#app")

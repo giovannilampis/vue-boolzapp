@@ -190,10 +190,12 @@ createApp ({
     methods: {
 
         changeActiveContact(i) {
+
             this.activeContact = i
         },
 
         enterMessage(index) {
+
             this.contacts[index].messages.push( { message: this.inputMessageContent, status: 'sent' } )
 
             setTimeout(() => {
@@ -202,6 +204,7 @@ createApp ({
         },
 
         responseMessage(index) {
+
             this.contacts[index].messages.push( { message: 'OK 🤩', status: 'received' } )
         },
 
@@ -209,6 +212,16 @@ createApp ({
 
             const time = dateAndTime.split(' ')[1];
 
+        },
+
+        searchContact() {
+
+            this.contacts = this.contacts.filter((item)=>{
+
+                const name = item.name.toLowerCase()
+
+                return name.includes(this.searchName.toLowerCase)
+            })
         }
     }
 }).mount("#app")

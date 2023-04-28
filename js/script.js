@@ -10,6 +10,8 @@ createApp ({
 
             search: '',
 
+            filteredContacts: [],
+
             contacts: [
                 {
                     id: 1,

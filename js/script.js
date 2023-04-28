@@ -205,7 +205,7 @@ createApp ({
 
             const lastMessageDate = contacts[activeContact].messages[lastMessageIndex].date;
 
-            return lastMessageDate
+            return lastMessageDate;
 
         }
 

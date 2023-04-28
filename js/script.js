@@ -8,6 +8,8 @@ createApp ({
 
             activeContact: 0,
 
+            search: '',
+
             contacts: [
                 {
                     id: 1,

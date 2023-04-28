@@ -197,6 +197,16 @@ createApp ({
 
             const time = dateAndTime.split(' ')[1];
 
+        },
+
+        lastMessageDate(activeContact) {
+
+            const lastMessageIndex = contacts[activeContact].messages.length - 1;
+
+            const lastMessageDate = contacts[activeContact].messages[lastMessageIndex].date;
+
+            return lastMessageDate
+
         }
 
     }

@@ -8,7 +8,7 @@ createApp ({
 
             activeContact: 0,
 
-            search: '',
+            searchName: '',
 
             filteredContacts: [],
 

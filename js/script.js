@@ -187,6 +187,20 @@ createApp ({
         }
     },
 
+    computed: {
+
+        filteredContactsList() {
+
+            return this.contacts.filter((item)=>{
+
+                const name = item.name.toLowerCase();
+
+                return name.includes(this.searchName.toLowerCase());
+            })
+        }
+
+    },
+
     methods: {
 
         changeActiveContact(i) {
@@ -214,14 +228,14 @@ createApp ({
 
         },
 
-        searchContact() {
+        searchContactFunc() {
 
-            this.contacts = this.contacts.filter((item)=>{
+            // this.contacts = this.contacts.filter((item)=>{
 
-                const name = item.name.toLowerCase()
+            //     const name = item.name.toLowerCase();
 
-                return name.includes(this.searchName.toLowerCase)
-            })
+            //     return name.includes(this.searchName.toLowerCase());
+            // })
         }
     }
 }).mount("#app")

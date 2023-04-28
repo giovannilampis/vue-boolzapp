@@ -12,6 +12,8 @@ createApp ({
 
             filteredContacts: [],
 
+            dt: luxon.dateAndTime,
+
             contacts: [
                 {
                     id: 1,
@@ -210,7 +212,7 @@ createApp ({
 
         enterMessage(index) {
 
-            this.contacts[index].messages.push( { message: this.inputMessageContent, status: 'sent' } )
+            this.contacts[index].messages.push( { date: this.dt, message: this.inputMessageContent, status: 'sent' } )
 
             setTimeout(() => {
                 this.responseMessage(index);
@@ -219,7 +221,7 @@ createApp ({
 
         responseMessage(index) {
 
-            this.contacts[index].messages.push( { message: 'OK 🤩', status: 'received' } )
+            this.contacts[index].messages.push( { date: this.dt, message: 'OK 🤩', status: 'received' } )
         },
 
         extractTime(dateAndTime) {

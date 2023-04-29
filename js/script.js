@@ -10,6 +10,8 @@ createApp ({
 
             searchName: '',
 
+            inputMessageContent: '',
+
             filteredContacts: [],
 
             contacts: [
@@ -214,13 +216,18 @@ createApp ({
 
             let today = d.toLocaleTimeString('it-IT');
 
-            this.contacts[index].messages.push( { date: today, message: this.inputMessageContent, status: 'sent' } )
+            if(this.inputMessageContent !== '') {
 
-            this.inputMessageContent = '';
+                this.contacts[index].messages.push( { date: today, message: this.inputMessageContent, status: 'sent' } )
 
-            setTimeout(() => {
-                this.responseMessage(index);
-            }, 5000);
+                this.inputMessageContent = '';
+    
+                setTimeout(() => {
+                    this.responseMessage(index);
+                }, 5000);
+
+            }
+
         },
 
         responseMessage(index) {

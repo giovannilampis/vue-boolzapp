@@ -210,7 +210,11 @@ createApp ({
 
         enterMessage(index) {
 
-            this.contacts[index].messages.push( { message: this.inputMessageContent, status: 'sent' } )
+            const d = new Date();
+
+            let today = d.toLocaleTimeString('it-IT');
+
+            this.contacts[index].messages.push( { date: today, message: this.inputMessageContent, status: 'sent' } )
 
             setTimeout(() => {
                 this.responseMessage(index);
@@ -219,7 +223,11 @@ createApp ({
 
         responseMessage(index) {
 
-            this.contacts[index].messages.push( { message: 'OK 🤩', status: 'received' } )
+            const d = new Date();
+
+            let today = d.toLocaleTimeString('it-IT');
+
+            this.contacts[index].messages.push( { date: today, message: 'OK 🤩', status: 'received' } )
         },
 
         extractTime(dateAndTime) {

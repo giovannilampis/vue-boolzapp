@@ -216,6 +216,8 @@ createApp ({
 
             this.contacts[index].messages.push( { date: today, message: this.inputMessageContent, status: 'sent' } )
 
+            this.inputMessageContent = '';
+
             setTimeout(() => {
                 this.responseMessage(index);
             }, 5000);

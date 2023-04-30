@@ -20,11 +20,19 @@
 
     <div id="app">
 
+        <!-- as a web app, the whole project has a 100 vh height -->
+
         <div class="vh-100 d-flex justify-content-center align-items-center">
+
+             <!-- BOTH LEFT AND RIGHT SIDE OF THE WEB APP WORK SPACE -->
 
             <div id="app-container" class="d-flex">
 
+                <!-- LEFT SIDE OF THE WEB APP WORK SPACE -->
+
                 <div id="side-contacts">
+
+                    <!-- user account space, on the top of the left side of the work space -->
 
                     <div id="user-account" class="d-flex justify-content-between align-items-center">
 
@@ -57,6 +65,8 @@
 
                     </div>
 
+                    <!-- in this input space the user can enter the name to search in the contact list -->
+
                     <div id="search-chat" class="d-flex justify-content-center align-items-center">
 
                         <div class="search-chat-container d-flex justify-content-start align-items-center">
@@ -73,7 +83,8 @@
 
                     <section id="friends-chats">
 
-                        <!-- V-FOR CYCLE to create contacts' chats -->
+                        <!-- use a V-FOR CYCLE to create contacts' chats -->
+                        
                         <div v-for="(contact, index) in filteredContactsList" 
                             :key="index" 
                             class="friend d-flex justify-content-between"
@@ -82,21 +93,26 @@
                             <div class="d-flex">
 
                                 <div class="avatar d-flex justify-content-center align-items-center">
+                                    <!-- dinamically get chat mate's profile picture -->
                                     <img :src="contact.avatar" :alt="contact.name">
                                 </div>
     
                                 <div class="friend-details mt-1">
-
+                                    
+                                    <!-- dinamically get chat mate's name -->
                                     <div class="name-color">{{contact.name}}</div>
                                         
-                                    <span class="last-message-color">Ultimo messaggio inviato</span>
+                                    <span class="last-message-color">Ultimo messaggio</span>
 
                                 </div>
 
                             </div>
 
                             <span class="last-message-color mt-1 mx-2">
+                                
+                                 <!-- dinamically get chat mate's last message date and time -->
                                 {{getLastReceivedMessage(contact).date}}
+
                             </span>
 
                         </div>
@@ -105,24 +121,33 @@
 
                 </div>
     
+                <!-- RIGHT SIDE OF THE WEB APP WORK SPACE -->
+
                 <div id="main-chat-space">
+                    
+                    <!-- co-user account space, on the top of the right side of the work space -->
     
                     <div id="co-user-account" class="d-flex justify-content-between align-items-center">
 
                         <div class="d-flex">
 
                             <div class="avatar">
+                                <!-- dinamically get chat co-user's profile picture -->
                                 <img :src="contacts[activeContact].avatar" :alt="contacts[activeContact].name">
                             </div>
     
                             <div class="friend-details mx-3 mt-1">
                                 
                                 <div class="name-color">
+                                     <!-- dinamically get chat co-user's name -->
                                     {{ contacts[activeContact].name }}
                                 </div>
                                     
                                 <span class="last-message-color">
+
                                     <!-- {{ contacts[activeContact].messages[contacts[activeContact].messages.length - 1].date }} -->
+
+                                    <!-- dinamically get chat co-user's last message date and time -->
                                    Ultimo accesso {{getLastReceivedMessage(contacts[activeContact]).date}}
                                 </span>
                             </div>
@@ -139,17 +164,23 @@
 
                     <div id="main-chat" class="d-flex flex-column">
 
+                        <!-- use a V-FOR CYCLE to see the whole conversation between user and active co-user -->
+
                         <div v-for="(element, index) in contacts[activeContact].messages" 
                              v-bind:class="(element.status === 'sent')?'sent':'received'"
                              class="position-relative">
 
+                                <!-- dinamically get chat message content -->
                                 <p>{{element.message}}</p>
+
+                                <!-- dinamically get chat message date and time -->
                                 <p class="position-absolute">{{element.date}}</p>
 
                         </div>
 
                     </div>
-                    
+
+                    <!-- in this input space the user can enter a new message, that will be shown inside #main-chat -->
                     <div id="main-input" class="d-flex justify-content-between align-items-center">
 
                             <a href="#" class="mx-4"><i class="fa-regular fa-face-smile"></i></a>

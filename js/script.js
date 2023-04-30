@@ -205,10 +205,14 @@ createApp ({
 
     methods: {
 
+        // function that allows to choose the current co-user
+
         changeActiveContact(i) {
 
             this.activeContact = i
         },
+
+        // function that allows the user to enter a new message into #main-chat and to receive an answer after 5 seconds
 
         enterMessage(index) {
 
@@ -230,6 +234,8 @@ createApp ({
 
         },
 
+        // function that allows to to receive an answer from the co-user 
+
         responseMessage(index) {
 
             const d = new Date();
@@ -239,6 +245,7 @@ createApp ({
             this.contacts[index].messages.push( { date: today, message: 'OK 🤩', status: 'received' } )
         },
 
+        // function that allows to get the last message received from any chat mate
         getLastReceivedMessage(item) {
 
             const msg = item.messages.filter((message)=>{

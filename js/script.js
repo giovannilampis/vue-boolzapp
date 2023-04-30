@@ -214,7 +214,7 @@ createApp ({
 
             const d = new Date();
 
-            let today = d.toLocaleTimeString('it-IT');
+            let today = d.toLocaleString('it-IT');
 
             if(this.inputMessageContent !== '') {
 
@@ -234,15 +234,9 @@ createApp ({
 
             const d = new Date();
 
-            let today = d.toLocaleTimeString('it-IT');
+            let today = d.toLocaleString('it-IT');
 
             this.contacts[index].messages.push( { date: today, message: 'OK 🤩', status: 'received' } )
-        },
-
-        extractTime(dateAndTime) {
-
-            const time = dateAndTime.split(' ')[1];
-
         },
 
         getLastReceivedMessage(item) {

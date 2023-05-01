@@ -14,6 +14,13 @@ createApp ({
 
             filteredContacts: [],
 
+            messageOptions: {
+
+                index: null,
+                show: false
+
+            },
+
             contacts: [
                 {
                     id: 1,
@@ -254,6 +261,10 @@ createApp ({
             })
 
             return msg[msg.length - 1];
+        },
+
+        showMessageOptions(i) {
+
         }
     }
 }).mount("#app")

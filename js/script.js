@@ -286,7 +286,7 @@ createApp ({
 
             let messageList = this.contacts[this.activeContact].messages;
 
-            messageList.splice( (messageList[i]), 1 );
+            messageList.splice(i, 1);
 
             this.messageOptions.index = null;
 

@@ -207,7 +207,7 @@ p {
 }
 
 #main-chat > div {
-    min-width: 30%;
+    width: 35%;
 }
 
 .sent,
@@ -254,6 +254,7 @@ p {
     top: 0.5rem;
     right: 1rem;
     font-size: 0.3rem;
+    margin-bottom: 1rem;
 }
 
 .absolute-chevron-down i {
@@ -262,8 +263,8 @@ p {
 
 .absolute-options {
     position: absolute;
-    width: 85%;
-    height: 60%;
+    width: 90%;
+    height: 63%;
     cursor: pointer;
     top: 1.5rem;
     right: 1rem;

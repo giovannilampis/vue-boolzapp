@@ -162,6 +162,8 @@
 
                     </div>
 
+                    <!-- this part of the right side contains the messages of the conversation between user & active co-user -->
+
                     <div id="main-chat" class="d-flex flex-column">
 
                         <!-- use a V-FOR CYCLE to see the whole conversation between user and active co-user -->
@@ -174,7 +176,9 @@
                                 <p>{{element.message}}</p>
 
                                 <!-- dinamically get chat message date and time -->
-                                <p class="position-absolute">{{element.date}}</p>
+                                <p class="date-time-absolute">{{element.date}}</p>
+
+                                <a @click="showMessageOptions" class="absolute-chevron-down" href="#"><i class="fa fa-chevron-down"></i></a>
 
                         </div>
 

@@ -200,11 +200,24 @@ p {
     min-width: 30%;
 }
 
-#main-chat .position-absolute {
+.date-time-absolute {
+    position: absolute;
     bottom: 0.15rem;
     right: 0.5rem;
     font-size: 0.6rem;
 }
+
+.absolute-chevron-down {
+    position: absolute;
+    top: 0.15rem;
+    right: 0.5rem;
+    font-size: 0.3rem;
+}
+
+.absolute-chevron-down i {
+    color: var(--white);
+}
+
 
 .sent {
     background-color: var(--chat-green);

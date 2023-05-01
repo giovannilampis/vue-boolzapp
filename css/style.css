@@ -322,6 +322,10 @@ p {
     z-index: 3;
 }
 
+.blur-message {
+    filter: blur(5px);
+  }
+
 /* customization of the area where user can digit a new message that will be pushed into #main-chat */
 
 #main-input {

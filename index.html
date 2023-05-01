@@ -182,7 +182,7 @@
 
                                 <div v-if="messageOptions.index === index && messageOptions.show === true" class="absolute-options">
 
-                                    <span>Cancella messaggio</span>
+                                    <span @click="deleteMessage(index)">Cancella messaggio</span>
 
                                 </div>
 

@@ -278,6 +278,14 @@ createApp ({
                 this.messageOptions.show = true;
 
             }
+        },
+
+        deleteMessage(i) {
+
+            let messageList = this.contacts[this.activeContact].messages;
+
+            messageList.splice( (messageList[i]), 1 );
+
         }
     },
 

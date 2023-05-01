@@ -230,7 +230,6 @@ p {
 .received {
     background-color: var(--white);
     align-self: flex-start;
-    padding: 1rem;
     margin-left: 2rem;
 }
 

@@ -21,7 +21,7 @@ createApp ({
 
             },
 
-            isShowMessageOptionsPressed: false,
+            // isShowMessageOptionsPressed: false,
 
             contacts: [
                 {
@@ -288,6 +288,10 @@ createApp ({
 
             messageList.splice( (messageList[i]), 1 );
 
+            this.messageOptions.index = null;
+
+            this.messageOptions.show = false;
+            
         }
     },
 

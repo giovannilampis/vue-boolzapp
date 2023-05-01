@@ -234,7 +234,7 @@ p {
     margin-left: 2rem;
 }
 
-.received i {
+.received .absolute-chevron-down i {
     color: var(--lightgrey-bg);
 }
 
@@ -263,11 +263,21 @@ p {
 
 .absolute-options {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    width: 85%;
+    cursor: pointer;
+}
+
+.absolute-options .sent {
     background-color: var(--chat-green);
     color: var(--white);
-    cursor: pointer;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.absolute-options .received {
+    background-color: var(--white);
+    top: 1.5rem;
+    left: 1rem;
 }
 
 /* received messages callouts customization */

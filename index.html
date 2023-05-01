@@ -180,6 +180,12 @@
 
                                 <a @click="showMessageOptions(index)" class="absolute-chevron-down" href="#"><i class="fa fa-chevron-down"></i></a>
 
+                                <div v-if="messageOptions.index === index && messageOptions.show === true" class="absolute-options">
+
+                                    <span>Cancella messaggio</span>
+
+                                </div>
+
                         </div>
 
                     </div>

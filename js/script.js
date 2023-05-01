@@ -265,6 +265,10 @@ createApp ({
 
         showMessageOptions(i) {
 
+            this.messageOptions.index = i
+
+            this.messageOptions.show = true
+
         }
     }
 }).mount("#app")

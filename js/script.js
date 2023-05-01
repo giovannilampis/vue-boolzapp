@@ -21,6 +21,8 @@ createApp ({
 
             },
 
+            isShowMessageOptionsPressed: false,
+
             contacts: [
                 {
                     id: 1,

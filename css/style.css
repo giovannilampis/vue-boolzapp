@@ -208,7 +208,34 @@ p {
 
 #main-chat > div {
     min-width: 30%;
-    
+}
+
+.sent,
+.received {
+    display: inline-block;
+    border-radius: 0.25rem;
+    padding: 1.5rem 1.4rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid #c1c1c1;
+    box-shadow: 0 0 10px #c1c1c1;
+}
+
+.sent {
+    background-color: var(--chat-green);
+    align-self: flex-end;
+    color: var(--white);
+    margin-right: 2rem;
+}
+
+.received {
+    background-color: var(--white);
+    align-self: flex-start;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.received i {
+    color: var(--lightgrey-bg);
 }
 
 #main-chat .sent a i,
@@ -236,39 +263,11 @@ p {
 
 .absolute-options {
     position: absolute;
-    top: -0.15rem;
-    right: 2rem;
-    background-color: goldenrod;
-    color: black;
-    cursor: pointer;
-}
-
-.sent {
+    top: 1rem;
+    right: 1rem;
     background-color: var(--chat-green);
-    align-self: flex-end;
     color: var(--white);
-    margin-right: 2rem;
-}
-
-.received {
-    background-color: var(--white);
-    align-self: flex-start;
-    padding: 1rem;
-    margin-left: 2rem;
-}
-
-.received i {
-    color: var(--lightgrey-bg);
-}
-
-.sent,
-.received {
-    display: inline-block;
-    border-radius: 0.25rem;
-    padding: 1.5rem 1.4rem;
-    margin-bottom: 0.7rem;
-    border: 1px solid #c1c1c1;
-    box-shadow: 0 0 10px #c1c1c1;
+    cursor: pointer;
 }
 
 /* received messages callouts customization */
@@ -322,8 +321,6 @@ p {
     border-left: 24px solid var(--chat-green);
     z-index: 3;
 }
-
-
 
 /* customization of the area where user can digit a new message that will be pushed into #main-chat */
 

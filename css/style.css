@@ -208,19 +208,25 @@ p {
 
 #main-chat > div {
     min-width: 30%;
+    
+}
+
+#main-chat .sent a i,
+#main-chat .received a i {
+    font-size: 0.7rem;
 }
 
 .date-time-absolute {
     position: absolute;
-    bottom: 0.15rem;
-    right: 0.5rem;
+    bottom: 0.3rem;
+    right: 1rem;
     font-size: 0.6rem;
 }
 
 .absolute-chevron-down {
     position: absolute;
-    top: 0.15rem;
-    right: 0.5rem;
+    top: 0.5rem;
+    right: 1rem;
     font-size: 0.3rem;
 }
 
@@ -241,14 +247,14 @@ p {
     background-color: var(--chat-green);
     align-self: flex-end;
     color: var(--white);
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .received {
     background-color: var(--white);
     align-self: flex-start;
     padding: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .received i {
@@ -257,10 +263,67 @@ p {
 
 .sent,
 .received {
-    border-radius: 1rem;
-    padding: 1rem;
+    display: inline-block;
+    border-radius: 0.25rem;
+    padding: 1.5rem 1.4rem;
     margin-bottom: 0.7rem;
+    border: 1px solid #c1c1c1;
+    box-shadow: 0 0 10px #c1c1c1;
 }
+
+/* received messages callouts customization */
+
+.received:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -42px;
+	top: 17px;
+    border: 10px solid transparent;
+    border-right: 32px solid rgb(193,193,193); /* IE8 Fallback */
+    border-right: 32px solid rgba(193,193,193,0.5);
+    z-index: 2;
+}
+.received:after {
+  content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -31px;
+	top: 20px;
+    border: 8px solid transparent;
+    border-right: 24px solid #fff;
+    z-index: 3;
+}
+
+/* sent messages callouts customization */
+
+.sent:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	right: -42px;
+	top: 17px;
+    border: 10px solid transparent;
+    border-left: 32px solid rgb(193,193,193); /* IE8 Fallback */
+    border-left: 32px solid rgba(193,193,193,0.5);
+    z-index: 2;
+}
+.sent:after {
+  content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	right: -31px;
+	top: 20px;
+    border: 8px solid transparent;
+    border-left: 24px solid var(--chat-green);
+    z-index: 3;
+}
+
+
 
 /* customization of the area where user can digit a new message that will be pushed into #main-chat */
 

@@ -263,20 +263,19 @@ p {
 .absolute-options {
     position: absolute;
     width: 85%;
+    height: 60%;
     cursor: pointer;
-}
-
-.absolute-options .sent {
-    background-color: var(--chat-green);
-    color: var(--white);
     top: 1.5rem;
     right: 1rem;
 }
 
-.absolute-options .received {
+.sent .absolute-options {
+    background-color: var(--chat-green);
+    color: var(--white);
+}
+
+.received .absolute-options {
     background-color: var(--white);
-    top: 1.5rem;
-    left: 1rem;
 }
 
 /* received messages callouts customization */
@@ -330,10 +329,6 @@ p {
     border-left: 24px solid var(--chat-green);
     z-index: 3;
 }
-
-.blur-message {
-    filter: blur(5px);
-  }
 
 /* customization of the area where user can digit a new message that will be pushed into #main-chat */
 

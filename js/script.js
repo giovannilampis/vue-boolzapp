@@ -265,10 +265,20 @@ createApp ({
 
         showMessageOptions(i) {
 
-            this.messageOptions.index = i
+            if( i === this.messageOptions.index && this.messageOptions.show === true) {
 
-            this.messageOptions.show = true
+                this.messageOptions.index = null;
 
+                this.messageOptions.show = false;
+
+            } else {
+
+                this.messageOptions.index = i;
+
+                this.messageOptions.show = true;
+
+            }
         }
-    }
+    },
+
 }).mount("#app")

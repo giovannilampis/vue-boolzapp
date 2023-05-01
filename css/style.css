@@ -11,6 +11,7 @@
     --chat-green: #005c4b;
     --blue: rgba(142, 218, 252, 1);
     --white: #ffffff;
+    --black: #000000;
 
 }
 
@@ -95,7 +96,7 @@ p {
 }
 
 .name-color {
-    color: var(--dark-gray);
+    color: var(--black);
 }
 
 #turn-notifications-on {
@@ -159,6 +160,11 @@ p {
     background-color: var(--icon-gray);
 }
 
+.co-user-details > span,
+.friend span {
+    font-size: 0.6rem;
+}
+
 .last-message-color {
     color: var(--lightgrey-bg);
 }
@@ -182,6 +188,10 @@ p {
 
 #co-user-account {
     border-radius: 0 0.2rem 0 0;
+}
+
+.co-user-details span {
+    color: var(--dark-gray);
 }
 
 #main-chat {
@@ -239,6 +249,10 @@ p {
     align-self: flex-start;
     padding: 1rem;
     margin-left: 1rem;
+}
+
+.received i {
+    color: var(--lightgrey-bg);
 }
 
 .sent,

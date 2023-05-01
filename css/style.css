@@ -218,6 +218,13 @@ p {
     color: var(--white);
 }
 
+.absolute-options {
+    position: absolute;
+    top: -0.15rem;
+    right: 2rem;
+    background-color: goldenrod;
+    color: black;
+}
 
 .sent {
     background-color: var(--chat-green);
